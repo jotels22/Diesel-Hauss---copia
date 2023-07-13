@@ -6,15 +6,11 @@
   font-family: 'Courier New', Courier, monospace;
   width: 100%; }
 
-h2, p {
-  color: #0a0a0a; }
-
 @media screen and (min-width: 1024px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body {
     background-image: url(../img/fondocolor.png); }
@@ -35,32 +31,32 @@ h2, p {
       height: 11em;
       width: 100%;
       justify-items: center; }
-    header ul {
-      display: flex;
-      justify-content: space-evenly;
-      gap: 0.3em;
-      align-items: center;
-      width: 100%;
-      background-color: #e9e9e9;
-      font-size: 2em;
-      height: 4em; }
-    header li {
-      color: #0a0a0a;
-      list-style: none;
-      width: 100%;
-      border: solid;
-      border-radius: 1rem;
-      text-align: center;
-      padding: 0px 40px 0px 40px; }
-    header a:link {
-      text-decoration: none;
-      background-color: #e9e9e9; }
-    header a:hover {
-      box-shadow: #333333 10px 5px 20px 1px;
-      border-radius: 1em; }
-    header a .img--logo:hover {
-      border-radius: 0em;
-      font-size: initial; }
+      header nav ul {
+        display: flex;
+        margin: 0;
+        justify-content: space-evenly;
+        gap: 0.3em;
+        align-items: center;
+        width: 100%;
+        background-color: #e9e9e9;
+        font-size: 2em;
+        height: 4em; }
+        header nav ul li {
+          color: #0a0a0a;
+          list-style: none;
+          width: 100%;
+          border: solid;
+          border-radius: 1rem;
+          text-align: center;
+          padding: 0px 40px 0px 40px;
+          cursor: pointer; }
+          header nav ul li:link {
+            text-decoration: none;
+            background-color: #e9e9e9; }
+          header nav ul li:hover {
+            text-decoration: none;
+            background-color: #e9e9e9;
+            font-size: larger; }
   main {
     background-color: #e9e9e9; }
   h2 {
@@ -106,10 +102,8 @@ h2, p {
     padding: 1em; }
     .contenedor-merch div {
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-      background-color: #004e219c;
+      background-color: #2D4263;
       border-radius: 20px; }
-    .contenedor-merch div:hover {
-      background-color: #008b13; }
     .contenedor-merch .informacion {
       height: 150px;
       display: flex;
@@ -133,8 +127,9 @@ h2, p {
       font-size: 17px;
       font-weight: 300;
       cursor: pointer; }
-      .contenedor-merch button button:hover {
-        background-color: #00296b; }
+      .contenedor-merch button:hover {
+        background-color: #00296b;
+        font-size: 1.2em; }
     .contenedor-merch .precio {
       font-size: 20px;
       font-weight: 500;
@@ -171,8 +166,7 @@ h2, p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.25fr 0.25fr 0.5fr;
     height: fit-content;
-    width: 100%;
-    object-fit: cover; }
+    width: 100%; }
     .contenedor-fotos div img {
       width: 100%;
       height: 100%;
@@ -221,7 +215,7 @@ h2, p {
       width: 100%;
       height: 100%; }
     .div-ub .img-ub {
-      height: 30em;
+      max-height: 30em;
       width: 100%; }
   footer {
     background-color: #923333;
@@ -252,7 +246,6 @@ h2, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body {
     background-image: url(../img/fondocolor.png); }
@@ -274,35 +267,36 @@ h2, p {
       justify-items: center;
       width: 100%;
       height: 11em; }
-    header ul {
-      display: flex;
-      justify-content: space-evenly;
-      gap: 0.3em;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #e9e9e9;
-      align-items: center;
-      font-size: 1em; }
-    header li {
-      display: flex;
-      list-style: none;
-      padding: 0.8em;
-      color: #0a0a0a;
-      background-color: #e9e9e9;
-      width: 100%;
-      border: solid #0a0a0a;
-      border-radius: 1rem;
-      height: 1em;
-      align-items: center;
-      font-size: 2em; }
-    header a:link {
-      text-decoration: none;
-      background-color: white; }
-    header a:hover {
-      box-shadow: #333333 10px 5px 20px 1px;
-      border-radius: 1em;
-      font-size: larger; }
+      header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.3em;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e9e9e9;
+        align-items: center;
+        font-size: 1em; }
+        header nav ul li {
+          display: flex;
+          list-style: none;
+          padding: 0.8em;
+          color: #0a0a0a;
+          background-color: #e9e9e9;
+          width: 100%;
+          border: solid #0a0a0a;
+          border-radius: 1rem;
+          height: 1em;
+          align-items: center;
+          font-size: 2em;
+          cursor: pointer; }
+          header nav ul li:link {
+            text-decoration: none;
+            background-color: #e9e9e9; }
+          header nav ul li:hover {
+            text-decoration: none;
+            background-color: #e9e9e9;
+            font-size: 2.4em; }
   main {
     background-color: #e9e9e9; }
   h2 {
@@ -327,13 +321,13 @@ h2, p {
       grid-column: span 2;
       height: fit-content;
       text-align: start; }
-    .contenedor .p1 {
-      width: 100%;
-      height: 100%;
-      font-size: 1.4em;
-      color: #0a0a0a;
-      text-align: start;
-      margin: 0; }
+      .contenedor .p1-div .p1 {
+        width: 100%;
+        height: 100%;
+        font-size: 1.4em;
+        color: #0a0a0a;
+        text-align: start;
+        margin: 0; }
     .contenedor .img1 {
       width: 100%;
       height: 100%;
@@ -355,8 +349,6 @@ h2, p {
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
       background-color: #2D4263;
       border-radius: 20px; }
-    .contenedor-merch div:hover {
-      background-color: #11294d; }
     .contenedor-merch .informacion {
       height: 150px;
       display: flex;
@@ -369,7 +361,7 @@ h2, p {
       font-family: 'Montserrat', sans-serif;
       font-size: 15px;
       font-weight: 300;
-      color: #e9e9e9; }
+      color: white; }
     .contenedor-merch button {
       background-color: #263143;
       width: 100px;
@@ -380,8 +372,17 @@ h2, p {
       font-size: 17px;
       font-weight: 300;
       cursor: pointer; }
-      .contenedor-merch button button:hover {
-        background-color: #2D4263; }
+      .contenedor-merch button:hover {
+        background-color: #00296b;
+        font-size: 1.2em; }
+    .contenedor-merch .precio {
+      font-size: 20px;
+      font-weight: 500;
+      color: #e9e9e9; }
+    .contenedor-merch .precio span {
+      font-size: 17px;
+      font-weight: 300;
+      color: #e9e9e9; }
     .contenedor-merch .div-none1 {
       display: none; }
   .marcas {
@@ -488,7 +489,6 @@ h2, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body {
     background-image: url(../img/fondocolor.png); }
@@ -513,37 +513,46 @@ h2, p {
       justify-items: center;
       width: 100%;
       height: 11em; }
-    header ul {
-      display: flex;
-      justify-content: space-evenly;
-      gap: 0.3em;
-      width: 100%;
-      height: 100%;
-      background-color: #e9e9e9;
-      align-items: center;
-      font-size: 1.2em;
-      padding-left: 0; }
-    header li {
-      display: flex;
-      list-style: none;
-      padding: 0.8em;
-      color: #0a0a0a;
-      background-color: #e9e9e9;
-      width: 100%;
-      border: solid #0a0a0a;
-      border-radius: 1em;
-      height: 1em;
-      align-items: center;
-      font-size: 2em;
-      justify-content: center; }
-    header header a:link {
-      text-decoration: none;
-      background-color: #e9e9e9; }
-    header a:hover {
-      box-shadow: #333333 10px 5px 20px 1px;
-      background-color: #e9e9e9;
-      border-radius: 1em;
-      font-size: larger; }
+      header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.3em;
+        width: 100%;
+        height: 100%;
+        background-color: #e9e9e9;
+        align-items: center;
+        font-size: 1.2em;
+        padding-left: 0; }
+        header nav ul li {
+          display: flex;
+          list-style: none;
+          padding: 0.8em;
+          color: #0a0a0a;
+          background-color: #e9e9e9;
+          width: 100%;
+          border: solid #0a0a0a;
+          border-radius: 1em;
+          height: 1em;
+          align-items: center;
+          font-size: 2em;
+          justify-content: center;
+          cursor: pointer; }
+          header nav ul li:link {
+            text-decoration: none;
+            background-color: #e9e9e9; }
+          header nav ul li:hover {
+            box-shadow: #333333 10px 5px 20px 1px;
+            background-color: #e9e9e9;
+            border-radius: 1em;
+            font-size: 2.4em; }
+  .precio {
+    font-size: 20px;
+    font-weight: 500;
+    color: #e9e9e9; }
+  .precio span {
+    font-size: 17px;
+    font-weight: 300;
+    color: #e9e9e9; }
   main {
     background-color: #e9e9e9; }
   h2 {
@@ -593,8 +602,6 @@ h2, p {
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
       background-color: #2D4263;
       border-radius: 20px; }
-    .contenedor-merch div:hover {
-      background-color: #11294d; }
     .contenedor-merch .informacion {
       height: 150px;
       display: flex;
@@ -618,8 +625,9 @@ h2, p {
       font-size: 17px;
       font-weight: 300;
       cursor: pointer; }
-      .contenedor-merch button button:hover {
-        background-color: #2D4263; }
+      .contenedor-merch button:hover {
+        background-color: #00296b;
+        font-size: 1.2em; }
     .contenedor-merch .div-none {
       display: none; }
   .marcas {
@@ -720,11 +728,13 @@ h2, p {
       list-style: none; }
       footer ul li img {
         height: 2em;
-        width: 2em; }
-  div ul li {
-    list-style: none; } }
+        width: 2em; } }
+
+div ul li {
+  list-style: none; }
 
 a {
   text-decoration: none;
   width: fit-content;
-  background-color: #e9e9e9; }
+  background-color: #e9e9e9;
+  color: #000; }

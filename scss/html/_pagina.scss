@@ -10,7 +10,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        color:black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
 body {
         background-image: url(../img/fondocolor.png);}
@@ -22,7 +21,8 @@ body {
         width: 100%;
         .img--logo{
             background-color: $color-principal;
-            width: 15em;}
+            width: 15em;
+        }
         nav {
             display: flex;
             justify-content: space-between;
@@ -31,16 +31,17 @@ body {
             background-color: $color-principal;
             height: 11em;
             width: 100%;
-            justify-items: center;}     
+            justify-items: center;    
             ul {
                 display: flex;
+                margin:0;
                 justify-content: space-evenly;
                 gap: 0.3em;;
                 align-items: center;
                 width: 100%;
                 background-color: $color-principal;
                 font-size: 2em;
-                height: 4em;}
+                height: 4em;
                 li {
                     color:$color-letras ;
                     list-style: none;
@@ -48,18 +49,16 @@ body {
                     border: solid ;
                     border-radius: 1rem;
                     text-align: center;
-                    padding: 0px 40px 0px 40px;}
-    a:link {
-                text-decoration: none;
-                background-color: $color-principal;}
-    a:hover {
-                box-shadow: #333333 10px 5px 20px 1px  ;
-                border-radius: 1em }
-    a .img--logo:hover{
-        border-radius: 0em;
-        font-size: initial;
-
-    } }
+                    padding: 0px 40px 0px 40px;
+                    cursor: pointer;
+                    &:link{
+                        text-decoration: none;
+                        background-color: $color-principal;}
+                    &:hover{
+                        text-decoration: none;
+                        background-color: $color-principal;
+                        font-size: larger;}}}}
+}
     main {
         background-color: $color-principal;
     }
@@ -104,10 +103,8 @@ body {
                 padding: 1em;
                 div{
                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-                    background-color: #004e219c;
+                    background-color: #2D4263;
                     border-radius: 20px;}
-                    div:hover{
-                    background-color: #008b13;}
                 .informacion{
                     height: 150px;
                     display: flex;
@@ -131,10 +128,11 @@ body {
                         font-size: 17px;
                         font-weight: 300;
                         cursor: pointer;
-                        button:hover{
+                        &:hover {
                             background-color: #00296b;
+                            font-size: 1.2em;
                         }}
-                .precio {
+                    .precio {
                     font-size: 20px;
                     font-weight: 500;
                     color: $color-principal;}
@@ -178,12 +176,11 @@ body {
         grid-template-rows:0.25fr 0.25fr 0.5fr;
         height: fit-content;
         width: 100%;
-        object-fit: cover;
         div img {
             @include full;
         object-fit: cover;
         padding: 0.5em;
-        background-color: $color-principal;;}
+        background-color: $color-principal;}
         .img-tres{
             grid-row: span 2;
             height: 100%;
@@ -231,7 +228,7 @@ body {
         padding: 0.3em;
         @include full;}
     .img-ub{
-        height: 30em;
+        max-height: 30em;
         width: 100%;}}
 
     
@@ -270,7 +267,6 @@ body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        color:black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
             body {
                 background-image: url(../img/fondocolor.png);}
@@ -292,7 +288,7 @@ body {
             background-color: $color-principal;                
             justify-items: center;
             width: 100%;
-            height: 11em;}
+            height: 11em;
             ul {
                 display: flex;
                 justify-content: space-evenly;
@@ -301,7 +297,7 @@ body {
                 @include full;
                 background-color: $color-principal;
                 align-items: center;
-                font-size: 1em;}
+                font-size: 1em;
                 li {
                     display: flex;
                     list-style: none;
@@ -313,14 +309,15 @@ body {
                     border-radius: 1rem;
                     height: 1em ;
                     align-items: center;  
-                    font-size: 2em;}        
-    a:link {
-        text-decoration: none;
-        background-color: white;}
-    a:hover {
-        box-shadow: #333333 10px 5px 20px 1px  ;
-        border-radius: 1em;
-        font-size: larger;}}
+                    font-size: 2em;   
+                    cursor: pointer;     
+                    &:link{
+                        text-decoration: none;
+                        background-color: $color-principal;}
+                    &:hover{
+                        text-decoration: none;
+                        background-color: $color-principal;
+                        font-size: 2.4em;}}}}}
 
         main {
             background-color: $color-principal;
@@ -347,13 +344,13 @@ body {
             box-sizing: border-box;       
             grid-column: span 2;    
             height: fit-content;   
-            text-align: start;}
+            text-align: start;
             .p1 {
                 @include full;
                 font-size: 1.4em;
                 color: $color-letras;
                 text-align: start;
-                margin: 0;}
+                margin: 0;}}
         .img1  {
             width: 100% ;
             height: 100%;
@@ -375,8 +372,6 @@ body {
                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
                     background-color: #2D4263;
                     border-radius: 20px;}
-                    div:hover{
-                    background-color: #11294d;}
                 .informacion{
                     height: 150px;
                     display: flex;
@@ -389,7 +384,7 @@ body {
                     font-family: 'Montserrat', sans-serif;
                     font-size: 15px;
                     font-weight: 300;
-                    color: $color-principal;}
+                    color: white;}
                     button{
                         background-color: #263143;
                         width: 100px;
@@ -400,9 +395,18 @@ body {
                         font-size: 17px;
                         font-weight: 300;
                         cursor: pointer;
-                        button:hover{
-                            background-color: #2D4263;
+                        &:hover {
+                            background-color: #00296b;
+                            font-size: 1.2em;
                         }}
+                        .precio {
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $color-principal;}
+                            .precio span{
+                            font-size: 17px;
+                            font-weight: 300;
+                            color: $color-principal;}
                     .div-none1{
                         display: none;
                     }}
@@ -534,7 +538,6 @@ body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        color:black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
             body {
                 background-image: url(../img/fondocolor.png);}
@@ -560,7 +563,7 @@ body {
             background-color: $color-principal;                
             justify-items: center;
             width: 100%;
-            height: 11em;}
+            height: 11em;
             ul {
                 display: flex;
                 justify-content: space-evenly;
@@ -569,7 +572,7 @@ body {
                 background-color: $color-principal;
                 align-items: center;
                 font-size: 1.2em;
-                padding-left: 0;}
+                padding-left: 0;
                 li {
                     display: flex;
                     list-style: none;
@@ -582,16 +585,24 @@ body {
                     height: 1em ;
                     align-items: center;  
                     font-size: 2em;
-                    justify-content: center;}        
-   header a:link {
-        text-decoration: none;
-        background-color: $color-principal;
-    }
-        a:hover {
-        box-shadow: #333333 10px 5px 20px 1px  ;
-        background-color: $color-principal;
-        border-radius: 1em;
-        font-size: larger;}}
+                    justify-content: center;  
+                    cursor: pointer;   
+                    &:link {
+                        text-decoration: none;
+                        background-color: $color-principal;}   
+                    &:hover {
+                        box-shadow: #333333 10px 5px 20px 1px  ;
+                        background-color: $color-principal;
+                        border-radius: 1em;
+                        font-size: 2.4em;}}}}}
+                    .precio {
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $color-principal;}
+                            .precio span{
+                            font-size: 17px;
+                            font-weight: 300;
+                            color: $color-principal;}
 
         main {
             background-color: $color-principal;
@@ -643,8 +654,6 @@ body {
                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
                     background-color: #2D4263;
                     border-radius: 20px;}
-                    div:hover{
-                    background-color: #11294d;}
                 .informacion{
                     height: 150px;
                     display: flex;
@@ -668,8 +677,9 @@ body {
                         font-size: 17px;
                         font-weight: 300;
                         cursor: pointer;
-                        button:hover{
-                            background-color: #2D4263;}}
+                        &:hover {
+                            background-color: #00296b;
+                            font-size: 1.2em;}}
                     .div-none{
                         display: none;
                     }}
@@ -795,16 +805,12 @@ body {
         
             }
 
-
+        }
 div ul li {
-    list-style: none;}}
+    list-style: none;}
     a {
         text-decoration: none;
         width: fit-content;
         background-color: $color-principal;
-    }
-
-    h2, p{
-        @extend %h2
-    }
+        color: #000;}
 
